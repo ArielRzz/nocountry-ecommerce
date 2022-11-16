@@ -1,18 +1,19 @@
-# Use postgres/password user/password credentials
-version: '3.1'
+server:
+  port: 8080
 
-services:
+spring:
+  application:
+    name: ecommerce
 
-  db:
-    image: postgres
-    restart: always
-    environment:
-      POSTGRES_PASSWORD: password
-    ports:
-      - 5432:5432
-
-  adminer:
-    image: adminer
-    restart: always
-    ports:
-      - 8989:8080
+  datasource:
+    username: postgres
+    password: password
+    url: jdbc:postgresql://localhost:5432/ecommerce
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
