@@ -6,7 +6,7 @@ spring:
     name: carrito
   datasource:
     username: root
-    password: password
+    password: Gordo6468
     url: jdbc:mysql://localhost:3306/carrito
     driver-class-name=com: com.mysql.cj.jdbc.Driver
 

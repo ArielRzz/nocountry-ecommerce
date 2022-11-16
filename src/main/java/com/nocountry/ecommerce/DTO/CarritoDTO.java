@@ -1,6 +1,6 @@
 package com.nocountry.ecommerce.DTO;
 
-import com.nocontry.models.Product;
+import com.nocountry.ecommerce.entities.ProductEntity;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -20,7 +20,7 @@ public class CarritoDTO {
     private Long id;
     private String user;
     @OneToMany
-    private List<Product> productlist;
+    private List<ProductEntity> productlist;
 
 
 }

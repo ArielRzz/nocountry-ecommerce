@@ -3,7 +3,10 @@ package com.nocountry.ecommerce.mapper;
 
 import com.nocountry.ecommerce.DTO.CarritoDTO;
 import com.nocountry.ecommerce.entities.CarritoEntity;
+import com.nocountry.ecommerce.entities.ProductEntity;
 import org.springframework.stereotype.Component;
+
+import java.util.List;
 
 
 @Component
@@ -21,7 +24,7 @@ public class CarritoMapper{
         dto.setId(entity.getId());
         dto.setUser(entity.getUser());
         if (loadProducts){
-            List<Product> productRequests = entity.getProductlist();
+            List<ProductEntity> productRequests = entity.getProductlist();
             dto.setProductlist(productRequests);
         }
         return dto;

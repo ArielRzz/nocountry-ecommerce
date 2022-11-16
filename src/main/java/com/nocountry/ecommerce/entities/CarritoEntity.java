@@ -1,6 +1,5 @@
 package com.nocountry.ecommerce.entities;
 
-import com.nocontry.models.Product;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -23,13 +22,13 @@ public class CarritoEntity {
     /*@OneToOne*/
     private String user;
     @OneToMany
-    private List<Product> productlist;
+    private List<ProductEntity> productlist;
 
-    public void addProduct(Product product){
+    public void addProduct(ProductEntity product){
         productlist.add(product);
     }
 
-    public void removeProduct(Product product){
+    public void removeProduct(ProductEntity product){
         productlist.remove(product);
     }
 
