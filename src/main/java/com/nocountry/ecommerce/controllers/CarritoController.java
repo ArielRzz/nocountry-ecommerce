@@ -1,5 +1,5 @@
 package com.nocountry.ecommerce.controllers;
-import com.nocountry.ecommerce.DTO.CarritoDTO;
+import com.nocountry.ecommerce.dto.CarritoDTO;
 import com.nocountry.ecommerce.service.CarritoService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;

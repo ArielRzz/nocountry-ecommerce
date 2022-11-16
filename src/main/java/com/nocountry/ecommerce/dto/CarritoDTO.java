@@ -1,4 +1,4 @@
-package com.nocountry.ecommerce.DTO;
+package com.nocountry.ecommerce.dto;
 
 import com.nocountry.ecommerce.entities.ProductEntity;
 import lombok.AllArgsConstructor;

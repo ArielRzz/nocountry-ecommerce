@@ -1,5 +1,5 @@
 package com.nocountry.ecommerce.service;
-import com.nocountry.ecommerce.DTO.CarritoDTO;
+import com.nocountry.ecommerce.dto.CarritoDTO;
 
 
 public interface CarritoService {

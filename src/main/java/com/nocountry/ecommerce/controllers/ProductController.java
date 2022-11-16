@@ -1,6 +1,6 @@
 package com.nocountry.ecommerce.controllers;
 
-import com.nocountry.ecommerce.DTO.ProductRequest;
+import com.nocountry.ecommerce.dto.ProductRequest;
 import com.nocountry.ecommerce.entities.ProductEntity;
 import com.nocountry.ecommerce.service.ProductService;
 import lombok.RequiredArgsConstructor;
