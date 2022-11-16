@@ -1,0 +1,22 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: carrito
+  datasource:
+    username: root
+    password: password
+    url: jdbc:mysql://localhost:3306/carrito
+    driver-class-name=com: com.mysql.cj.jdbc.Driver
+
+
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    format_sql: true
+    show-sql: true
