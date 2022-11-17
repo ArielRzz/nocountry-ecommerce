@@ -1,8 +1,7 @@
 package com.nocountry.ecommerce.mapper;
 
-
-import com.nocountry.ecommerce.DTO.CarritoDTO;
-import com.nocountry.ecommerce.DTO.UserDTO;
+import com.nocountry.ecommerce.dto.CarritoDTO;
+import com.nocountry.ecommerce.dto.UserDTO;
 import com.nocountry.ecommerce.entities.CarritoEntity;
 import com.nocountry.ecommerce.entities.ProductEntity;
 import com.nocountry.ecommerce.entities.UserEntity;

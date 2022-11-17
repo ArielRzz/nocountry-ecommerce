@@ -1,6 +1,6 @@
 package com.nocountry.ecommerce.service.impl;
 
-import com.nocountry.ecommerce.DTO.ProductDTO;
+import com.nocountry.ecommerce.dto.ProductDTO;
 import com.nocountry.ecommerce.entities.ProductEntity;
 import com.nocountry.ecommerce.mapper.ProductMapper;
 import com.nocountry.ecommerce.repository.ProductRepository;

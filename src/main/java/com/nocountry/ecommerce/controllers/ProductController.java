@@ -1,6 +1,6 @@
 package com.nocountry.ecommerce.controllers;
 
-import com.nocountry.ecommerce.DTO.ProductDTO;
+import com.nocountry.ecommerce.dto.ProductDTO;
 import com.nocountry.ecommerce.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;

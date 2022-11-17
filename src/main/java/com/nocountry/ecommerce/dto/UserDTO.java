@@ -1,11 +1,8 @@
-package com.nocountry.ecommerce.DTO;
+package com.nocountry.ecommerce.dto;
 
 import com.nocountry.ecommerce.entities.CarritoEntity;
-import com.nocountry.ecommerce.entities.ProductEntity;
 import lombok.*;
 
-import javax.persistence.*;
-import java.util.List;
 
 @Data
 @NoArgsConstructor

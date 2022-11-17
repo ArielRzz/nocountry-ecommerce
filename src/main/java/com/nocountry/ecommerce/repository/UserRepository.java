@@ -1,9 +1,14 @@
 package com.nocountry.ecommerce.repository;
 
-import com.nocountry.ecommerce.entities.CarritoEntity;
+import com.nocountry.ecommerce.entities.AppUser;
 import com.nocountry.ecommerce.entities.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface UserRepository extends JpaRepository<UserEntity, Long> {
+import java.util.Optional;
+
+public interface UserRepository extends JpaRepository<AppUser, Long> {
+
+    Optional<AppUser> findByEmail(String email);
+    Boolean existsByEmail(String email);
 
 }

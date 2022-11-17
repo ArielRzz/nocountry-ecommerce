@@ -1,7 +1,6 @@
 package com.nocountry.ecommerce.mapper;
 
-
-import com.nocountry.ecommerce.DTO.ProductDTO;
+import com.nocountry.ecommerce.dto.ProductDTO;
 import com.nocountry.ecommerce.entities.ProductEntity;
 import org.springframework.stereotype.Component;
 

@@ -1,7 +1,7 @@
 package com.nocountry.ecommerce.mapper;
 
 
-import com.nocountry.ecommerce.DTO.CarritoDTO;
+import com.nocountry.ecommerce.dto.CarritoDTO;
 import com.nocountry.ecommerce.entities.CarritoEntity;
 import com.nocountry.ecommerce.entities.ProductEntity;
 import org.springframework.beans.factory.annotation.Autowired;
