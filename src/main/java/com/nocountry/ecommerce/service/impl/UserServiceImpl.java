@@ -30,6 +30,8 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private RoleRepository roleRepository;
 
+
+    @Override
     public UserDTO save(UserDTO dto) {
         UserEntity userEntity = userMapper.userDTOtoEntity(dto);
         UserEntity entidadGuardada = userRepository.save(userEntity);
@@ -38,15 +40,18 @@ public class UserServiceImpl implements UserService {
         return result;
     }
 
+    @Override
     public AppUser saveUser(AppUser user){
         log.info("Saving new user into DB");
         return userRepository.save(user);
     }
+    @Override
     public Role saveRole(Role role){
         log.info("Saving new role into DB");
         return roleRepository.save(role);
     }
 
+    @Override
     public void addRoleToUser(String username, String rolename){
         log.info("Adding role:{} into user:{}", rolename, username);
         AppUser user = userRepository.findByEmail(username).get();
@@ -54,11 +59,13 @@ public class UserServiceImpl implements UserService {
         user.getRoles().add(role); // for @Transactional annotation this save into DB
     }
 
+    @Override
     public AppUser getUser(String username){
         log.info("Getting user:{}", username);
         return userRepository.findByEmail(username).get();
     }
 
+    @Override
     public List<AppUser> getUsers(){
         log.info("Getting all users");
         return userRepository.findAll();
