@@ -17,10 +17,12 @@ import java.util.List;
 public class CarritoEntity {
 
     @Id
-    @GeneratedValue(strategy=GenerationType.SEQUENCE)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
-    /*@OneToOne*/
-    private String user;
+
+    @OneToOne
+    @JoinColumn(name = "user_ID")
+    private UserEntity user;
     @OneToMany
     private List<ProductEntity> productlist;
 

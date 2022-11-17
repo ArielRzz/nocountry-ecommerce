@@ -5,10 +5,12 @@ import com.nocountry.ecommerce.entities.CarritoEntity;
 import com.nocountry.ecommerce.mapper.CarritoMapper;
 import com.nocountry.ecommerce.repository.CarritoRepository;
 import com.nocountry.ecommerce.service.CarritoService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
+@RequiredArgsConstructor
 public class CarritoServiceImpl implements CarritoService {
 
     @Autowired

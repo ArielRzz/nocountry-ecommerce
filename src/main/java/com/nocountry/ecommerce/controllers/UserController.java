@@ -1,7 +1,9 @@
 package com.nocountry.ecommerce.controllers;
 
 import com.nocountry.ecommerce.DTO.ProductDTO;
+import com.nocountry.ecommerce.DTO.UserDTO;
 import com.nocountry.ecommerce.service.ProductService;
+import com.nocountry.ecommerce.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -12,17 +14,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/v1/product")
+@RequestMapping("/api/v1/user")
 @RequiredArgsConstructor
-public class ProductController {
+public class UserController {
 
     @Autowired
-    private ProductService productService;
+    private UserService userService;
 
     @PostMapping("/guardar")
-    public ResponseEntity<ProductDTO> save(@RequestBody ProductDTO productDTO){
-        ProductDTO ProductoGuardado = productService.save(productDTO);
-        return ResponseEntity.status(HttpStatus.CREATED).body(ProductoGuardado) ;
+    public ResponseEntity<UserDTO> save(@RequestBody UserDTO userDTO){
+        UserDTO userGuardado = userService.save(userDTO);
+        return ResponseEntity.status(HttpStatus.CREATED).body(userGuardado) ;
     }
 
 }

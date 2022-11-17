@@ -12,16 +12,16 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "Producto")
-public class ProductEntity {
+@Table(name = "usuario")
+public class UserEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private String description;
-    private Double stock;
+    private String email;
+    private String pass;
+
     @ManyToOne
     private CarritoEntity carrito;
-
 }
